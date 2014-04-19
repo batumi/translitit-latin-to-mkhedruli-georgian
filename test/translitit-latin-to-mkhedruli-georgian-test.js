@@ -42,12 +42,12 @@ buster.testCase('A latin Georgian transliteration', {
 
     'should work with facebook kartuli-style': function() {
         assert.equals(transliteration('chemi lamazi rcali.isuper korici ise sagapao poli.'),
-            'ჩემი ლამაზი რძალი.ისუპერ ქორწილი ისე საღადაო პოლი.');
-        assert.equals(transliteration('ra qalixaf ufufuf:*:*'), 'რა ქალი ხარ უფუფუფ:*:*');
+            'ჩემი ლამაზი რწალი.ისუპერ კორიწი ისე საგაპაო პოლი.');
+        assert.equals(transliteration('ra qalixaf ufufuf:*:*'), 'რა ყალიხაფ უფუფუფ:*:*');
         assert.equals(transliteration('Xaxaxa'), 'ხახახა');
         assert.equals(transliteration('xo vizamt magas araa problema, axla ukve mec chamotria am proeqtma'),
-            'ხო ვიზამთ მაგას არაა პრობლემა, ახლა უკვე მეც ჩამიმათრია ამ პროექტმა');
-        assert.equals(transliteration('kiii gavixseneb arifas naswavls'), 'კი გავიხსენებ არიფას ნასწავლს');
+            'ხო ვიზამტ მაგას არაა პრობლემა, ახლა უკვე მეწ ჭამოტრია ამ პროეყტმა');
+        assert.equals(transliteration('kiii gavixseneb arifas naswavls'), 'კიიი გავიხსენებ არიფას ნასწავლს');
     },
 
     'should work with dashes': function() {
