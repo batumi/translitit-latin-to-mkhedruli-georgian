@@ -2,7 +2,7 @@
 /*jslint maxlen:140*/
 'use strict';
 
-var transliteration = require('../lib/translitit-cyrillic-russian-to-latin'),
+var transliteration = require('../lib/translitit-latin-to-mkhedruli-georgian'),
     buster = require('buster'),
     assert = buster.referee.assert,
     refute = buster.referee.refute

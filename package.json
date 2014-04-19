@@ -1,10 +1,10 @@
 {
-    "name": "translitit-cyrillic-russian-to-latin",
+    "name": "translitit-latin-to-mkhedruli-georgian",
     "version": "0.1.0",
-    "description": "A cyrillic russian to latin transliteration module",
-    "author": "Martin Gausby <martin@gausby.dk>",
-    "repository": "git@github.com:gausby/translitit-cyrillic-russian-to-latin.git",
-    "main": "lib/translitit-cyrillic-russian-to-latin.js",
+    "description": "A Latin to Mkhedruli Georgian transliteration module",
+    "author": "Batumi App Devs <batumi-apps@googlegroups.com>",
+    "repository": "git@github.com:batumi/translitit-latin-to-mkhedruli-georgian.git",
+    "main": "lib/translitit-latin-to-mkhedruli-georgian.js",
     "dependencies": {
         "translitit-engine": "0.1.1"
     },

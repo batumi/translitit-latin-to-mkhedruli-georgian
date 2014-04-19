@@ -1,29 +1,24 @@
-Russian Cyrillic to Latin Transliteration
+Georgian Mkhedruli to Latin Transliteration
 =================================================
-A JavaScript function that transliterate strings from cyrillic russian to latin.
+A JavaScript function that transliterate strings from latin to Mkhedruli Georgian.
 
-This project is build using the [translitit-engine][translitit-engine], and its unit tests has been lifted from [Staltec][staltec]'s project called [transliteration.cyr][transliteration.cyr].
-
-Please note. I ([Martin Gausby](https://github.com/gausby)) do not speak Russian, so I can not know if this package transliterate 100% correct. Please file bug reports, add unit tests and even try to fix problems if you find some. Pull requests are more than welcome.
-
-The motivation for this project was to test the transliteration engine I created.
+This project is build using the [translitit-engine][translitit-engine], and its unit tests and transliteration tables are based on [translitit-cyrillic-russian-to-latin][translitit-cyrillic-russian-to-latin].
 
 [translitit-engine]: https://github.com/gausby/translitit-engine
-[staltec]: https://github.com/Staltec
-[transliteration.cyr]: https://github.com/Staltec/transliteration
+[gausby/translitit-cyrillic-russian-to-latin]: https://github.com/gausby/translitit-cyrillic-russian-to-latin
 
 ## Installation and Usage
 Add it to your npm-based project by typing the following in your project root.
 
-    npm install translitit-cyrillic-russian-to-latin --save
+    npm install translitit-latin-to-mkhedruli-georgian --save
 
 Now, you can include the transliteration service in your project by including it:
 
-    var translit = require('translitit-cyrillic-russian-to-latin');
+    var translit = require('translitit-latin-to-mkhedruli-georgian');
 
 `translit` will now be a function, that will transliterate its input.
 
-    translit('Борщагівка'); // returns 'Borshchagivka'
+    translit('igive'); // returns 'იგივე'
 
 
 ## Development
