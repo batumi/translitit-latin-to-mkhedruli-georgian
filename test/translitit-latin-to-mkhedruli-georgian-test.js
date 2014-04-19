@@ -38,6 +38,7 @@ buster.testCase('A cyrillic russian transliteration', {
         assert.equals(transliteration('evropis'), 'ევროპის');
         assert.equals(transliteration('kontinentze'), 'კონტინენტზე');
         assert.equals(transliteration('pirvelia'), 'პირველია');
+        assert.equals(transliteration('shthabechdileba'), 'შთაბეჭდილება');
     },
 
     'should work with dashes': function(){
