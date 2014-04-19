@@ -5,7 +5,7 @@ A JavaScript function that transliterate strings from latin to Mkhedruli Georgia
 This project is build using the [translitit-engine][translitit-engine], and its unit tests and transliteration tables are based on [translitit-cyrillic-russian-to-latin][translitit-cyrillic-russian-to-latin].
 
 [translitit-engine]: https://github.com/gausby/translitit-engine
-[gausby/translitit-cyrillic-russian-to-latin]: https://github.com/gausby/translitit-cyrillic-russian-to-latin
+[translitit-cyrillic-russian-to-latin]: https://github.com/gausby/translitit-cyrillic-russian-to-latin
 
 ## Installation and Usage
 Add it to your npm-based project by typing the following in your project root.
