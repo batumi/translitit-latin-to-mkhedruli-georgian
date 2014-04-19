@@ -8,9 +8,11 @@ This project is build using the [translitit-engine][translitit-engine], and its 
 [translitit-cyrillic-russian-to-latin]: https://github.com/gausby/translitit-cyrillic-russian-to-latin
 
 ## Installation and Usage
-Add it to your npm-based project by typing the following in your project root.
+Add it to your project by typing the following in your project root.
 
     npm install translitit-latin-to-mkhedruli-georgian --save
+    OR
+	bower install translitit-latin-to-mkhedruli-georgian --save
 
 Now, you can include the transliteration service in your project by including it:
 

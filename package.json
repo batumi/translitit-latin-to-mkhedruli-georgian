@@ -1,24 +1,25 @@
 {
-    "name": "translitit-latin-to-mkhedruli-georgian",
-    "version": "0.1.0",
-    "description": "A Latin to Mkhedruli Georgian transliteration module",
-    "author": "Batumi App Devs <batumi-apps@googlegroups.com>",
-    "repository": "git@github.com:batumi/translitit-latin-to-mkhedruli-georgian.git",
-    "main": "lib/translitit-latin-to-mkhedruli-georgian.js",
-    "dependencies": {
-        "translitit-engine": "0.1.1"
-    },
-    "devDependencies": {
-        "grunt": "0.4.1",
-        "grunt-buster": "0.2.1",
-        "grunt-contrib-jshint": "0.6.4",
-        "grunt-contrib-watch": "0.5.3",
-        "grunt-clear": "0.2.1",
-
-        "buster": "0.7.6"
-    },
-    "scripts": {
-        "test": "grunt test"
-    },
-    "engine": "*"
+  "name": "translitit-latin-to-mkhedruli-georgian",
+  "version": "0.1.0",
+  "description": "A Latin to Mkhedruli Georgian transliteration module",
+  "author": "Batumi App Devs <batumi-apps@googlegroups.com>",
+  "repository": "git@github.com:batumi/translitit-latin-to-mkhedruli-georgian.git",
+  "main": "lib/translitit-latin-to-mkhedruli-georgian.js",
+  "dependencies": {
+    "translitit-engine": "0.1.1"
+  },
+  "devDependencies": {
+    "grunt": "0.4.1",
+    "grunt-buster": "0.2.1",
+    "grunt-contrib-jshint": "0.6.4",
+    "grunt-contrib-watch": "0.5.3",
+    "grunt-clear": "0.2.1",
+    "buster": "0.7.6",
+    "browserify": "^3.44.0",
+    "grunt-browserify": "^2.0.7"
+  },
+  "scripts": {
+    "test": "grunt test"
+  },
+  "engine": "*"
 }

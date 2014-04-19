@@ -1,7 +1,7 @@
 /* global module */
 'use strict';
 
-module.exports = function (grunt) {
+module.exports = function(grunt) {
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
 
@@ -30,6 +30,16 @@ module.exports = function (grunt) {
                 files: '<%= jshint.all %>',
                 tasks: ['clear', 'jshint', 'buster']
             }
+        },
+        browserify: {
+            src: {
+                src: ['index.js'],
+                dest: '<%= pkg.name %>.js',
+                options: {
+                    ignore: [],
+                    shim: {}
+                }
+            }
         }
     });
 
@@ -39,9 +49,10 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-clear');
     grunt.loadNpmTasks('grunt-buster');
     grunt.loadNpmTasks('grunt-contrib-jshint');
+    grunt.loadNpmTasks('grunt-browserify');
 
     // Shortcuts to tasks
     grunt.registerTask('test', 'buster');
 
-    grunt.registerTask('default', ['jshint:all', 'buster']);
+    grunt.registerTask('default', ['jshint:all', 'buster', 'browserify']);
 };
