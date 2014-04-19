@@ -5,11 +5,10 @@
 var transliteration = require('../lib/translitit-latin-to-mkhedruli-georgian'),
     buster = require('buster'),
     assert = buster.referee.assert,
-    refute = buster.referee.refute
-;
+    refute = buster.referee.refute;
 
-buster.testCase('A cyrillic russian transliteration', {
-    'should work with common words': function(){
+buster.testCase('A latin Georgian transliteration', {
+    'should work with common words': function() {
         assert.equals(transliteration('uprets’edento'), 'უპრეცედენტო');
         assert.equals(transliteration('masshtabis'), 'მასშტაბის');
         assert.equals(transliteration('hakat’oni'), 'ჰაკათონი');
@@ -41,15 +40,25 @@ buster.testCase('A cyrillic russian transliteration', {
         assert.equals(transliteration('shthabechdileba'), 'შთაბეჭდილება');
     },
 
-    'should work with dashes': function(){
+    'should work with facebook kartuli-style': function() {
+        assert.equals(transliteration('chemi lamazi rcali.isuper korici ise sagapao poli.'),
+            'ჩემი ლამაზი რძალი.ისუპერ ქორწილი ისე საღადაო პოლი.');
+        assert.equals(transliteration('ra qalixaf ufufuf:*:*'), 'რა ქალი ხარ უფუფუფ:*:*');
+        assert.equals(transliteration('Xaxaxa'), 'ხახახა');
+        assert.equals(transliteration('xo vizamt magas araa problema, axla ukve mec chamotria am proeqtma'),
+            'ხო ვიზამთ მაგას არაა პრობლემა, ახლა უკვე მეც ჩამიმათრია ამ პროექტმა');
+        assert.equals(transliteration('kiii gavixseneb arifas naswavls'), 'კი გავიხსენებ არიფას ნასწავლს');
+    },
+
+    'should work with dashes': function() {
         assert.equals(transliteration('igive-igive'), 'იგივე-იგივე');
     },
 
-    'should work with underscores': function(){
+    'should work with underscores': function() {
         assert.equals(transliteration('igive_igive'), 'იგივე_იგივე');
     },
 
-    'test empty and null string': function(){
+    'test empty and null string': function() {
         assert.equals(transliteration(''), '');
         assert.equals(transliteration(), '');
     }
