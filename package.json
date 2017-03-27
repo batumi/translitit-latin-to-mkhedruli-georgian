@@ -1,6 +1,6 @@
 {
   "name": "translitit-latin-to-mkhedruli-georgian",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "A Latin to Mkhedruli Georgian transliteration module",
   "author": "Batumi App Devs <batumi-apps@googlegroups.com>",
   "repository": "git@github.com:batumi/translitit-latin-to-mkhedruli-georgian.git",
