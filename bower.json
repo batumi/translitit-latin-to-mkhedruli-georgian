@@ -1,7 +1,7 @@
 {
   "name": "translitit-latin-to-mkhedruli-georgian",
   "main": "translitit-latin-to-mkhedruli-georgian.js",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "homepage": "https://github.com/batumi/translitit-latin-to-mkhedruli-georgian",
   "authors": [
     "batumi-apps@googlegroups.com"
