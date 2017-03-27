@@ -21,6 +21,7 @@ describe('A Latin to Mkhedruli Georgian transliteration', function() {
     assert.equal(transliteration('da'), 'და');
     assert.equal(transliteration('inzhinrebi'), 'ინჟინრები');
     assert.equal(transliteration('mt’eli'), 'მთელი');
+    assert.equal(transliteration('bat’umi'), 'ბათუმი');
     assert.equal(transliteration('sak’art’velos'), 'საქართველოს');
     assert.equal(transliteration('universitetebidan'), 'უნივერსიტეტებიდან');
     assert.equal(transliteration('skolebidan'), 'სკოლებიდან');

@@ -22,6 +22,13 @@ Now, you can include the transliteration service in your project by including it
 
     translit('igive'); // returns 'იგივე'
 
+This matches the Transliteration from [Google](https://translate.google.com/#auto/en/%E1%83%A1%E1%83%90%E1%83%A5%E1%83%90%E1%83%A0%E1%83%97%E1%83%95%E1%83%94%E1%83%9A%E1%83%9D%E1%83%A1) where the unmarked consonants (ejective) have no `’` and the marked ones have `’` (non-ejectives). Which is not the same as the national transcription where ejectives have `’` and non-ejectives have nothing.  https://en.wikipedia.org/wiki/Georgian_language#Writing_system  http://ge.translit.cc
+
+
+## Related libraries
+
+* https://github.com/batumi/translitit-mkhedruli-georgian-to-ipa
+* https://github.com/batumi/translitit-mkhedruli-georgian-to-latin
 
 ## Development
 

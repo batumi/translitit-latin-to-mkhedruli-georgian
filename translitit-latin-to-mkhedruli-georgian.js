@@ -62,7 +62,7 @@ global.Translitit = require('./lib/translitit-latin-to-mkhedruli-georgian');
         'c': 'წ',
         'C': 'წ',
         'w': 'წ',
-        'W': 'წ',
+        'W': 'ჭ',
         'ts\'': 'ც',
         'Ts\'': 'ც',
         'TS\'': 'ც',
@@ -217,4 +217,4 @@ module.exports = function (table) {
         return subject.replace(searchPattern, lookupTable);
     };
 };
-},{}]},{},[1]);
+},{}]},{},[1])
